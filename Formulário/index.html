@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body> 
+    <header>
+        <img src="IMAGENS/logo.png" alt="Logo da empresa">
+        <nav>
+           <ul>
+               <li><a href="../Site/index.HTML">Inicio</a></li>
+               <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Formulário de contato <br></h1>
+
+    <p>Preencha os dados a baixo</p>
+    
+    <form action="processar.php" method="post">
+        <fieldset>
+            <legend>Dados do Cantato</legend>
+
+            <br><label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <br><label for="data">Nascimento:</label>
+            <input type="date" id="data" name="data" required><br>
+
+            <br><labe>Sexo:</label>
+            <label for="masculino">
+                <input type="radio" name="Sexo" id="masculino" value="masculino" required>
+                Masculino
+            </label>
+            <label for="feminino">
+                <input type="radio" name="Sexo" id="feminino" value="feminino" required>
+                Feminino
+            </label>
+
+
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            
+            <br><label for="endereço">Endereço:</label>
+            <input type="text" id= "endereco" name="endereco" required><br>
+
+            <br><label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required><br>
+
+            <br><label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" nome="cidade"required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato</legend>
+
+            <br><label for="celular">Celular</label>
+            <input type="tel" id="celelua" name="celular" required><br>
+
+            <br><label for="emial">Email</label>
+            <input type="email" id="emial" name="email" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de Interesse</legend>
+
+            <br><label for="area">Área de Interesse:</label><br>
+            <label for="html">
+                <input type="radio" id="html" name="area" value="html">
+                HTML
+            <label for="css">
+                <input type="radio" id="css" name="area" value="css">
+                CSS
+            <label for="js">
+                <input type="radio" id="js" name="area" value="js">
+                JavaScript
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+        </fieldset> <br>
+        <input type="submit" valure="Enviar"><br>
+        
+        <br><footer>
+            <li>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="IMAGENS/logo-insta.png" alt="logo do instagram">
+                </a>
+             </li>
+            <li>
+                <a href="sttps://twitter.com" target="_blank">
+                    <img src="IMAGENS/logo-twitter.png" alt="logo do twitter">
+                </a>
+            </li>
+            <li>
+                <a href="sttps://facebook.com" target="_blank">
+                    <img src="IMAGENS/logo-facebook.png" alt="logo do facebook">
+                </a>
+            </li>
+        </footer>
+     </form>
+</body>
+</html>
