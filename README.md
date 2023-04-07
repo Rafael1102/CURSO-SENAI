@@ -1,21 +1,18 @@
+<doctipe html>
 
-<h1 align="center">Criando uma Landing Page </h1>
-<p align="center">
-Front-end-Tech-2023 foi um evento exclusivo e gratuito, promovido pela SENAI e SESI para ensino de tecnologias WEB. <br/>
-</p>
+<html lang="pt-br">
 
-<p align="center">
+    <meta charset="UTF-8">
+    <title> Introduçao a front end <title>
 
-## 🚀 Tecnologias
+<p> O curso lab 365 tem o intuito de ensinar a novas pessoas como dar os primeiros passos no desenvolvimento web.<p>
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+<H1> Nesse curso vamos criar diversas atividades e sites que iräo encrementar o portifoli. <H1>
 
-- HTML e CSS
+# - tecnologias usadas nesse curso
+
+- HTML
+- CSS
 - JavaScript
-- Git e Github
 
-## 💻 Projeto
-
-A lane page é um projeto de pagina inicial com cadastro.
-
-- [Visite o projeto online]( https://rafael1102.github.io/CURSO-SENAI/ )
+Curso gratuito disponivel em ("https://ava.lab365.tech/")
