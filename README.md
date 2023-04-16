@@ -8,7 +8,6 @@
 
 - HTML
 - CSS
-- JavaScript
 
 Veja o que estamos criando ("https://rafael1102.github.io/CURSO-SENAI/")
 
