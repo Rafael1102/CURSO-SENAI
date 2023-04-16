@@ -1,124 +1,176 @@
-@import"https://fonts.googleapis.com/css2?family=Soucer+Sans+Pro:wght@200;300;400&display=swap";
-*{
-margin: 0; padding: 0;
-border: 0;
-font-size: 100%;
-font-family: “Source Sans Pro”, sans-serif;
-font-weight: 300;
-vertical-align: baseline;
-text-decoration: none;
-list-style: none;
+* { /* Este seletor escolhe todos os elementos do documento e redefine
+    todas as configurações do navegador. */
+    margin: 0; padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: “Source Sans Pro”, sans-serif;
+    font-weight: 300;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
 }
 
- .conteudo {
-width: 1024px;
-margin: 30px auto;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
 
-display: flex;
-flex-direction: column;
-}
- .linha {
-display: flex;
-flex-direction: row;
-}
- header section {
-justify-content: space-between;
-align-items: center;
-}
- header nav ul {
-display: flex;
-flex-direction: row;
-align-items: center;
-}
- header nav ul li a {
-margin: 0px 15px;
-color: #39c;
-}
+  /* Estilo do logo */
+  #logo {
+    width: 200px;
+  }
 
- .botao {
-padding: 5px 30px;
-border-radius: 10px;
-}
- .botao.botao-destaque {
-background: #30C5CC;
-color: #fff;
-}
- .sobre {
-justify-content: space-between;
-align-items: center;
-}
- .sobre article {
-width: 350px;
-}
- .sobre article h1 {
-font-size: 70px;
-line-height: 90%;
-font-weight: 400;
-color: #336;
-}
+  /* Estilo dos botões */
+  #linha {
+    display: flex;
+    align-items: center;
+  }
 
- .sobre article h2,
+  button {
+    background-color: #fff; /* Cor do botão */
+    color: #30C5CC; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px; /*Afasta um botão do outro*/
+    border-radius: 10px; /* Arredondamento dos cantos do botão */
+    cursor: pointer;
+    transition: backgroud-color 0,3s ease; /* Transição suave da cor de fundo */
+  }
+  /* Espaçamento entre os botões */
+  button + button {
+    margin-left: 10px;
+  }
+
+  /* Estilo dos links nos botões */
+  button a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do botão */
+  }
+
+  /*Estilo do Botão ativo*/
+  button.ativo {
+    background-color: #30C5CC;/*Cor de fundo do botã ativo*/
+    color:#fff; /* Cor do testo do botão tivo */
+  }
+  .sobre {
+    justify-content: space-between;
+    align-items: center;
+    }
+     .sobre article {
+    width: 350px;
+    }
+     .sobre article h1 {
+    font-size: 70px;
+    line-height: 90%;
+    font-weight: 400;
+    color: #336;
+    }
+    .sobre article h2,
 .sobre article p {
 color: #39c;
 }
- .sobre article h2 {
-font-size: 30px;
-text-transform: uppercase;
-letter-spacing: 2px;
-line-height: 200%;
-}
- .sobre article p {
-margin: 10px 0 40px;
-}
- .sobre article figcaption img {
-width: 700px;
-}
- footer ul li {
-margin: 0 30px 0 0;
-}
- footer ul li a img {
-width: 30px;
+.sobre article h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 200%;
+  }
+   .sobre article p {
+  margin: 10px 0 40px;
+  }
+  .sobre article figcaption img {
+    width: 700px;
+    }
+
+    #bsobre {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background-color: #30C5CC;
+      border-radius: 10px;
+      padding: 10px 20px;
+      border: none;
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+
+    }
+
+    #bsobre:hover {
+      opacity: 0.8;
+
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; /* Adiciona flex-wrap para permitir quebrar a linha dos elementos filhos */
+  }
+  
+  section.sobre {
+      flex-basis: 100%; /* Define a largura inicial para 100% para ocupar toda a largura disponível */
+      padding: 0 20px; /* Adicione margens internas para espaçamento */
+  }
+  
+  section.sobre article {
+      max-width: 100%;
+  }
+  
+  section.sobre h1,
+  section.sobre h2,
+  section.sobre p {
+      margin: 0;
+      padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os itens ao topo do container */
+    flex-wrap: wrap; /* Permitir que os itens quebrem a linha quando necessário */
 }
 
- /* Define o tamanho dos elementos em telas de 1150px. */
-@media(max-width: 1150px) {
-.conteudo {
- width: 950px;
-}
-}
- /* Define o tamanho dos elementos em telas de 1024px. */
-@media(max-width: 1024px) {
-.conteudo {
- width: 850px;
-}
-.sobre figcaption img {
- width: 600px;
-}
-}
- /* Define o tamanho dos elementos em telas de 915px. */
-@media(max-width: 915px) {
-.conteudo {
- width: 600px;
-}
-.linha {
- flex-direction: column;
+.sobre {
+    flex-basis: 100%; /* Ocupa a largura total disponível */
+    max-width: 600px; /* Define uma largura máxima para o conteúdo */
+    padding: 0 20px; /* Adicione margens internas para espaçamento */
 }
 
-header nav {
- margin: 30px 0;
+article {
+    flex-basis: 100%; /* Ocupa a largura total disponível */
 }
-.sobre article {
- width: 100%;
+
+img {
+      max-width: 100%;
+      height: auto; /* Para manter a proporção da imagem */
+  }
+  
+  
+ /* Estilos para o footer */
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 50px;
 }
-.sobre figcaption img {
- width: 100%;
- margin: 30px 0 0 0;
+
+#button {
+  display: flex;
 }
-footer .linha {
- flex-direction: row;
- justify-content: center;
+
+#button li {
+  margin-left: 10px;
 }
+
+#button li a img {
+  width: 38px;
 }
+
+
+
+
 /* Define o tamanho dos elementos em telas de 665px. */
 @media(max-width: 665px) {
 
@@ -146,6 +198,8 @@ header nav ul li {
  margin: 0;
  padding: 0;
 }
+
+
 }
 /* Itens do formulário */
 fieldset {
