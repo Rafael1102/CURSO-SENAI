@@ -9,6 +9,5 @@
 - HTML
 - CSS
 
-Veja o que estamos criando ("https://rafael1102.github.io/CURSO-SENAI/")
+Veja o que estou criando ("https://rafael1102.github.io/CURSO-SENAI/")
 
-Curso gratuito disponivel em ("https://ava.lab365.tech/")
